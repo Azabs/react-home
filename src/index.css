@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --f-size: 300%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: darksfont;
+  src: url(./darksfont.ttf);
+}
+
+/*general*/
+body {
+  background-color: black;
+}
+
+body,
+a {
+  font-family: "darksfont";
+  color: white;
+}
+/*-------*/
+
+/*nav bar*/
+.navbar {
+  font-size: xx-large;
+}
+/*-------*/
+
+/*main container*/
+#main-image {
+  height: 50vw;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding: 1%;
+  margin: 10%;
+}
+
+#main-links a {
+  font-family: "darksfont";
+  font-size: var(--f-size);
+}
+
+#main-links .fav-icon {
+  margin-right: 5%;
+}
+
+.fav-icon {
+  width: 25px;
+  height: 25px;
+}
+/*------------*/
+
+/*footer*/
+
+#footer {
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5%;
+  padding: 1% 0;
+}
+/*------*/
+
+/*breakpoints*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #main-image {
+    height: 350px;
+    margin: 10%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #main-image {
+    margin: 5%;
+  }
+
+  #footer {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
